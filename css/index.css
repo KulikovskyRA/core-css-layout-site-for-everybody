@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(214, 214, 214);
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hat {
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  color: rgb(241, 241, 241);
+  background-color: rgb(49, 54, 60);
+  display: flex;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+  font-family: Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  animation-name: hatcolor;
+  animation-duration: 2s;
+}
+
+@keyframes hatcolor {
+  0% {
+    background-color: rgb(255, 255, 255);
+    padding-left: 0%;
+  }
+  100% {
+    background-color: rgb(49, 54, 60);
+    padding-left: 15%;
+  }
+}
+
+.image {
+  height: 60px;
+  width: 60px;
+}
+
+#connect {
+  background-color: rgb(214, 214, 214);
+  color: rgb(49, 54, 60);
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 12%;
+  margin-top: 0.5%;
+}
+
+.underhat {
+  margin-left: 10%;
+  margin-right: 15%;
+  margin-top: 1.5%;
+  border-color: black;
+  border: 2px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.toc {
+  color: rgb(241, 241, 241);
+  background-color: rgb(49, 54, 60);
+  position: sticky;
+  border-radius: 5px;
+  width: 18%;
+  height: 95vh;
+  vertical-align: top;
+  padding-top: 3%;
+  line-height: 1.5em;
+  animation-name: tocmove;
+  animation-duration: 1.5s;
+}
+
+@keyframes tocmove {
+  0% {
+    padding-top: 95%;
+  }
+  100% {
+    padding-top: 3%;
+  }
+}
+
+.scheme {
+  border-collapse: separate;
+  border-spacing: 20px 0;
+}
+
+.content {
+  background-color: rgb(241, 241, 241);
+  color: rgb(49, 54, 60);
+  border-radius: 5px;
+  padding: 3%;
+  text-indent: 40px;
+  text-align: justify;
+  animation-name: blackToWhite;
+  animation-duration: 5s;
+}
+
+@keyframes blackToWhite {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: rgb(241, 241, 241);
+  }
+}
+
+.me {
+  width: 250px;
+  height: 333px;
+  float: right;
+  border-radius: 10px;
+  margin: 20px;
+  animation-name: rotation;
+  animation-duration: 1s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+.percent {
+  background: rgb(214, 214, 214);
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.skills {
+  display: inline;
+  list-style-type: none;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.con {
+  display: inline;
+  list-style-type: none;
+}
